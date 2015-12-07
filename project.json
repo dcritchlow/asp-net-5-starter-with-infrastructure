@@ -4,7 +4,7 @@
     "emitEntryPoint": true
   },
   "tooling": {
-    "defaultNamespace": "CalendarParse"
+    "defaultNamespace": "StartingApp"
   },
 
   "dependencies": {
