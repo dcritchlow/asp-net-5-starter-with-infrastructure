@@ -1,14 +1,17 @@
 using System;
 
-public static class PreConditions
+namespace StartingApp.Infrastructure
 {
-	public static T CheckNotNull<T>(T value, string paramName)
-		where T : class
+	public static class PreConditions
 	{
-		if(value == null)
+		public static T CheckNotNull<T>(T value, string paramName)
+			where T : class
 		{
-			throw new ArgumentNullException(paramName);
-		}	
-		return value;
+			if(value == null)
+			{
+				throw new ArgumentNullException(paramName);
+			}	
+			return value;
+		}
 	}
 }
